@@ -27,8 +27,8 @@ namespace azure_webapp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-            //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            options.UseSqlServer(Configuration.GetConnectionString("Azure_bbhConnection")));
+            options.UseSqlServer(Configuration.GetConnectionString("defaultconnection")));
+            //options.UseSqlServer(Configuration.GetConnectionString("Azure_bbhConnection")));
 
 
             services.AddIdentity<ApplicationUser, IdentityRole>()

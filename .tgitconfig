@@ -1,0 +1,4 @@
+[hook "precommit"]
+	cmdline = C:\\Users\\D10\\Desktop\\dev\\New folder (2)\\pre-commit.sample
+	wait = false
+	show = false

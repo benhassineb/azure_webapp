@@ -29,11 +29,6 @@ export class VehicleVm {
       });
   }
 
-  @computedFrom('controller.errors')
-  get errors() {
-    return this.controller && this.controller.errors;
-  }
-
 }
 
 

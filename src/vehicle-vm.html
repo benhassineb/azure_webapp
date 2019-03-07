@@ -1,25 +1,26 @@
 <template>
-    <!-- <require from="vehicle-vm.less"></require> -->
+    <require from="./invalid-feedback.html"></require>
 
-  <div class="invalid-feedback" repeat.for="error of errors">
-    ${error.message}
-  </div>
+  <!-- <ul if.bind="controller.errors">
+    <li repeat.for="error of controller.errors">
+      ${error.message}
+    </li>
+  </ul> -->
 
-  <valid-feedback errors.bind="controller.errors"></valid-feedback>
+
   <form class="needs-validation" novalidate>
     <div class="form-row">
       <div class="col-md-4 mb-3" validation-errors.bind="firstNameErrors">
-        <label >First name</label>
-        <input type="text" class="form-control  ${firstNameErrors.length >0 ?'is-invalid':''}" id="validationCustom01"
-          placeholder="First name" value.bind="person.firstName  & validate" required>
+        <label>First name</label>
+        <input type="text" class="form-control  ${firstNameErrors.length >0 ?'is-invalid':''}" placeholder="First name"
+          value.bind="person.firstName  & validate">
         <div class="invalid-feedback" repeat.for="errorInfo of firstNameErrors">
           ${errorInfo.error.message}
         </div>
       </div>
       <div class="col-md-4 mb-3">
         <label for="validationCustom02">Last name</label>
-        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
-          value.bind="person.lastName  & validate" required>
+        <input type="text" class="form-control" placeholder="Last name" value.bind="person.lastName  & validate">
         <div class="valid-feedback">
           Looks good!
         </div>
@@ -28,10 +29,10 @@
         <label for="validationCustomUsername">Username</label>
         <div class="input-group">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <span class="input-group-text">@</span>
           </div>
           <input type="text" class="form-control" placeholder="Username" aria-describedby="inputGroupPrepend"
-            value.bind="userName & validate" required>
+            value.bind="userName & validate">
           <div class="invalid-feedback">
             Please choose a username.
           </div>
@@ -41,24 +42,21 @@
     <div class="form-row">
       <div class="col-md-6 mb-3">
         <label for="validationCustom03">City</label>
-        <input type="text" class="form-control" id="validationCustom03" placeholder="City"
-          value.bind="person.adress.city & validate" required>
+        <input type="text" class="form-control" placeholder="City" value.bind="person.adress.city & validate">
         <div class="invalid-feedback">
           Please provide a valid city.
         </div>
       </div>
       <div class="col-md-3 mb-3">
         <label for="validationCustom04">State</label>
-        <input type="text" class="form-control" id="validationCustom04" placeholder="State"
-          value.bind="person.adress.state  & validate" required>
+        <input type="text" class="form-control" placeholder="State" value.bind="person.adress.state  & validate">
         <div class="invalid-feedback">
           Please provide a valid state.
         </div>
       </div>
       <div class="col-md-3 mb-3">
         <label for="validationCustom05">Zip</label>
-        <input type="text" class="form-control" id="validationCustom05" placeholder="Zip"
-          value.bind="person.adress.zip  & validate" required>
+        <input type="text" class="form-control" placeholder="Zip" value.bind="person.adress.zip  & validate">
         <div class="invalid-feedback">
           Please provide a valid zip.
         </div>
@@ -66,7 +64,7 @@
     </div>
     <div class="form-group">
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <input class="form-check-input" type="checkbox" value="">
         <label class="form-check-label" for="invalidCheck">
           Agree to terms and conditions
         </label>
@@ -79,23 +77,23 @@
   </form>
 
 
-  <div class="col-md-3 mb-3">
+  <div class="col-md-3 mb-3" validation-errors.bind="nameErrors">
     <label for="validationCustom05">Name</label>
-    <input type="text" class="form-control"  placeholder="Name"
-      value.bind="person.car.name  & validate" required>
-  </div>
-
-  <div class="col-md-3 mb-3 " validation-errors.bind="vinErrors">
-    <label >Vin</label>
-    <input type="text" class="form-control  ${vinErrors.length >0 ?'is-invalid':''}"  placeholder="Vin"
-      value.bind="person.car.vin  & validate" required>
-    <div class="invalid-feedback" repeat.for="errorInfo of vinErrors">
+    <input type="text" class="form-control  ${nameErrors.length >0 ?'is-invalid':''}" placeholder="Name"
+      value.bind="person.car.name  & validate">
+    <div class="invalid-feedback" repeat.for="errorInfo of nameErrors">
       ${errorInfo.error.message}
     </div>
   </div>
- 
 
-
-
+  <div class="col-md-3 mb-3 " validation-errors.bind="vinErrors">
+    <label>Vin</label>
+    <input type="text" class="form-control  ${vinErrors.length >0 ?'is-invalid':''}" placeholder="Vin"
+      value.bind="person.car.vin  & validate">
+    <!-- <div class="invalid-feedback" repeat.for="errorInfo of vinErrors">
+      ${errorInfo.error.message}
+    </div> -->
+    <invalid-feedback errors.bind=vinErrors></invalid-feedback>
+  </div>
 
 </template>

@@ -1,0 +1,42 @@
+{
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Visual Studio Light",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.startupEditor": "newUntitledFile",
+
+    "psi-header.variables": [
+		["company", "ALS"],
+		["author", "b.benha$$$ine"],
+        ["authoremail", "b.benhassine@hotmail.com"],
+        ["initials","BBH"]
+	],
+    "psi-header.changes-tracking": {
+        "isActive": true,
+        "autoHeader": "autoSave"
+    },
+    "psi-header.templates": [
+        {
+            "language": "*",
+            "template": [
+                "Filename: <<filepath>>",
+                "Path: <<projectpath>>",
+                "Created Date: <<filecreated('dddd, MMMM Do YYYY, HH:MM:ss')>>",
+                "Author: <<author>>",
+                "",
+                "Copyright (c) <<year>> <<company>>",
+                "-----",
+                "HISTORY:",
+                "Date      \tBy\tComments",
+                "----------\t---\t---------------------------------------------------------"
+            ],
+            "changeLogCaption": "HISTORY:",
+            "changeLogHeaderLineCount": 2,
+            "changeLogEntryTemplate": [
+                "",
+                "<<dateformat('dddd, MMMM Do YYYY, HH:MM:ss')>>\t<<initials>>\t"
+            ]
+        }
+    ]
+}

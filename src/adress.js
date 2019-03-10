@@ -1,21 +1,24 @@
 //generated class : Adress
 import { ValidationRules } from 'aurelia-validation';
 export const AdressValidationRules = () => ValidationRules
-  .ensure('state').required()
+	.ensure('state').required()
 	.ensure('city').required()
 	.ensure('zip').required();
 
 export class Adress {
-  state;
+	state;
 	city;
 	zip;
 
-  constructor(state, city, zip) {
-    this.state = state;
+	constructor(state, city, zip) {
+		this.state = state;
 		this.city = city;
 		this.zip = zip;
 
-  }
+	}
+
+	static fromObject(srcObj) {
+		return Object.assign(new Adress, ...srcObj);
+	}
 }
 AdressValidationRules().on(Adress);
-    

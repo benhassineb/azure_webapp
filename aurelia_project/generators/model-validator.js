@@ -1,7 +1,6 @@
 import { inject } from 'aurelia-dependency-injection';
 import { _ } from 'lodash';
 import { Project, ProjectItem, CLIOptions, UI } from 'aurelia-cli';
-import { ModelsDefinition } from './model-data';
 
 let path = require('path');
 
@@ -11,7 +10,32 @@ export default class ModelValidatorGenerator {
     this.project = project;
     this.options = options;
     this.ui = ui;
-    this.modelsDefinition = ModelsDefinition;
+    this.modelsDefinition = [{
+      className: 'Person',
+      properties: [{
+        name: 'FirstName',
+        displayName: 'First Name',
+        type: 'string',
+        required: true,
+        minLength: 5,
+        maxLength: 10
+      },
+      {
+        name: 'LastName',
+        displayName: 'Last Name',
+        type: 'string',
+        required: false,
+        minLength: 10,
+        maxLength: 20
+      }, {
+        name: 'age',
+        displayName: 'Age',
+        type: 'integer',
+        required: true,
+        min: 18,
+        max: 60
+      }]
+    }];
   }
 
   execute() {
@@ -21,7 +45,7 @@ export default class ModelValidatorGenerator {
       .ensureAnswer(this.options.args[0], 'What would you like to call the model?')
       .then(name => {
         return self.ui.ensureAnswer(this.options.args[1],
-            'What sub-folder would you like to add it to?\nIf it doesn\'t exist it will be created for you.\n\nDefault folder is the source folder (src).', '.')
+          'What sub-folder would you like to add it to?\nIf it doesn\'t exist it will be created for you.\n\nDefault folder is the source folder (src).', '.')
           .then(subFolders => {
             this.modelsDefinition.forEach(item => {
               let fileName = this.project.makeFileName(item.className);
@@ -54,17 +78,23 @@ export default class ModelValidatorGenerator {
     let ensure = `.ensure('${_.camelCase(prop.name)}').displayName('${prop.displayName}')`;
     Object.entries(prop).forEach(([key, value]) => {
       switch (key) {
-      case 'required':
-        ensure = ensure + '.required()';
-        break;
-      case 'minLength':
-        ensure = ensure + `.minLength(${value})`;
-        break;
-      case 'maxLength':
-        ensure = ensure + `.maxLength(${value})`;
-        break;
-      default:
-        console.log('Sorry, we are out of ' + key + '.');
+        case 'required':
+          ensure = value ? ensure + '.required()' : ensure;
+          break;
+        case 'minLength':
+          ensure = ensure + `.minLength(${value})`;
+          break;
+        case 'maxLength':
+          ensure = ensure + `.maxLength(${value})`;
+          break;
+          case 'min':
+          ensure = ensure + `.min(${value})`;
+          break;
+          case 'max':
+          ensure = ensure + `.max(${value})`;
+          break;
+        default:
+          console.log('Sorry, we are out of ' + key + '.');
       }
     });
     result.push(ensure);
@@ -87,6 +117,10 @@ export class ${data.className}Generated {
   constructor(${this.getPropertiesNames(data.properties, ', ')}) {
     ${this.getPropertiesNamesTor(data.properties)};
   }
+
+  static fromObject(srcObj) {
+		return Object.assign(new ${data.className}Generated(), ...srcObj);
+	}
 }
 export const ${_.camelCase(data.className)}GeneratedValidationRules = () =>
   ValidationRules

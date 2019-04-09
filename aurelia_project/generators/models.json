@@ -1,0 +1,37 @@
+[
+    {
+        "className": "Person",
+        "properties": [
+            {
+                "name": "FirstName",
+                "displayName": "First Name",
+                "required": true,
+                "minLength": 5,
+                "maxLength": 10,
+                "format": "string"
+            },
+            {
+                "name": "LastName",
+                "displayName": "Last Name",
+                "required": false,
+                "minLength": 10,
+                "maxLength": 20,
+                "format": "string"
+            },
+            {
+                "name": "Age",
+                "displayName": "Age",
+                "required": true,
+                "min": 18,
+                "max": 60,
+                "format": "integer"
+            },
+            {
+                "name": "Birthday",
+                "displayName": "Birthday",
+                "required": true,
+                "format": "date"
+            }
+        ]
+    }
+]

@@ -1,7 +1,7 @@
 import { inject } from 'aurelia-dependency-injection';
 import { _ } from 'lodash';
 import { Project, ProjectItem, CLIOptions, UI } from 'aurelia-cli';
-
+import models from './models.json';
 let path = require('path');
 
 @inject(Project, CLIOptions, UI)
@@ -10,32 +10,7 @@ export default class ModelValidatorGenerator {
     this.project = project;
     this.options = options;
     this.ui = ui;
-    this.modelsDefinition = [{
-      className: 'Person',
-      properties: [{
-        name: 'FirstName',
-        displayName: 'First Name',
-        type: 'string',
-        required: true,
-        minLength: 5,
-        maxLength: 10
-      },
-      {
-        name: 'LastName',
-        displayName: 'Last Name',
-        type: 'string',
-        required: false,
-        minLength: 10,
-        maxLength: 20
-      }, {
-        name: 'age',
-        displayName: 'Age',
-        type: 'integer',
-        required: true,
-        min: 18,
-        max: 60
-      }]
-    }];
+    this.modelsDefinition = models;
   }
 
   execute() {
@@ -51,7 +26,7 @@ export default class ModelValidatorGenerator {
               let fileName = this.project.makeFileName(item.className);
               self.project.root.add(
                 ProjectItem.text(path.join(subFolders, fileName + '.js'), this.generateJSSource(item)),
-                ProjectItem.text(path.join(subFolders, fileName + '.cs'), this.generateCSSource(item))
+                // ProjectItem.text(path.join(subFolders, fileName + '.cs'), this.generateCSSource(item))
               );
             });
 
@@ -87,11 +62,17 @@ export default class ModelValidatorGenerator {
         case 'maxLength':
           ensure = ensure + `.maxLength(${value})`;
           break;
-          case 'min':
+        case 'min':
           ensure = ensure + `.min(${value})`;
           break;
-          case 'max':
+        case 'max':
           ensure = ensure + `.max(${value})`;
+          break;
+        case 'format':
+          ensure = ensure + `.satisfiesRule(${value})`;
+          break;
+        case 'name':
+        case 'displayName':
           break;
         default:
           console.log('Sorry, we are out of ' + key + '.');

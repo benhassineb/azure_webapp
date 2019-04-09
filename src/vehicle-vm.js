@@ -10,9 +10,10 @@ export class VehicleVm {
     this.controller = controller;
     this.controller.validateTrigger = validateTrigger.changeOrBlur;
 
-    this.car = new Car();
-    this.vehicle = new Vehicle();
+    // this.car = new Car();
+    // this.vehicle = new Vehicle();
     this.person = new Person();
+    console.log(this.person);
   }
 
   valider() {

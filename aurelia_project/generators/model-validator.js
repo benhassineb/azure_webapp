@@ -26,7 +26,7 @@ export default class ModelValidatorGenerator {
               let fileName = this.project.makeFileName(item.className);
               self.project.root.add(
                 ProjectItem.text(path.join(subFolders, fileName + '.js'), this.generateJSSource(item)),
-                // ProjectItem.text(path.join(subFolders, fileName + '.cs'), this.generateCSSource(item))
+                ProjectItem.text(path.join(subFolders, fileName + '.cs'), this.generateCSSource(item))
               );
             });
 
@@ -44,11 +44,11 @@ export default class ModelValidatorGenerator {
     return props.map(prop => 'this.' + _.camelCase(prop.name) + ' = ' + _.camelCase(prop.name)).join(sep);
   }
 
-  getValidationRules = (props) => {
-    return props.map(prop => this.getPropertyRules(prop).join('\n    ')).join('\n    ');
+  getValidationRulesJs = (props) => {
+    return props.map(prop => this.getPropertyRulesJs(prop).join('\n    ')).join('\n    ');
   }
 
-  getPropertyRules = (prop) => {
+  getPropertyRulesJs = (prop) => {
     let result = [];
     let ensure = `.ensure('${_.camelCase(prop.name)}').displayName('${prop.displayName}')`;
     Object.entries(prop).forEach(([key, value]) => {
@@ -83,6 +83,47 @@ export default class ModelValidatorGenerator {
     return result;
   }
 
+
+  getValidationRulesCs = (props) => {
+    return props.map(prop => this.getPropertyRulesCs(prop).join('\n            ')).join(';\n            ');
+  }
+
+  getPropertyRulesCs = (prop) => {
+    let result = [];
+    let ensure = `RuleFor(x => x.${prop.name})`;
+    Object.entries(prop).forEach(([key, value]) => {
+      switch (key) {
+        case 'required':
+          ensure = value ? ensure + '.NotEmpty()' : ensure;
+          break;
+        case 'minLength':
+          ensure = ensure + `.MinimumLength(${value})`;
+          break;
+        case 'maxLength':
+          ensure = ensure + `.MaximumLength(${value})`;
+          break;
+        case 'min':
+          ensure = ensure + `.GreaterThan(${value})`;
+          break;
+        case 'max':
+          ensure = ensure + `.LessThan(${value})`;
+          break;
+         case 'format':
+        //   ensure = ensure + `.Must(${value})`;
+        //   break;
+        case 'name':
+        case 'displayName':
+          break;
+        default:
+          console.log('Sorry, we are out of ' + key + '.');
+      }
+    });
+    ensure= ensure + `.WithName("${prop.displayName}")`;
+    result.push(ensure);
+
+    return result;
+  }
+
   generateJSSource(data) {
     return `/* --------------------------------------
  * AUTO-GENERATED FILE.  DO NOT MODIFY.
@@ -105,14 +146,26 @@ export class ${data.className}Generated {
 }
 export const ${_.camelCase(data.className)}GeneratedValidationRules = () =>
   ValidationRules
-    ${this.getValidationRules(data.properties)};
+    ${this.getValidationRulesJs(data.properties)};
 
 ${_.camelCase(data.className)}ValidationRules().on(${data.className}Generated);
 `;
   }
 
-  generateCSSource(className) {
-    return `
+  generateCSSource(data) {
+    return `using FluentValidation;
+
+    namespace FValidation
+    {
+        public class ${data.className}Validator : AbstractValidator<${data.className}>
+        {
+            public ${data.className}Validator()
+            {
+              ${this.getValidationRulesCs(data.properties)};
+            }
+    
+        }
+    }    
 `;
   }
 }

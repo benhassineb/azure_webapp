@@ -1,0 +1,686 @@
+{
+    "licence": "ODbL 1.0",
+    "limit": 5,
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -0.539458,
+                    44.850987
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "33, Gironde, Nouvelle-Aquitaine (Aquitaine)",
+                "y": 6423135,
+                "citycode": "33063",
+                "postcode": "33100",
+                "score": 0.8508999999999999,
+                "street": "Rue Jules Verne",
+                "city": "Bordeaux",
+                "type": "housenumber",
+                "x": 420444.7,
+                "housenumber": "27",
+                "importance": 0.3599,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000354321958",
+                "label": "27 Rue Jules Verne 33100 Bordeaux"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    3.129476,
+                    45.783286
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "63, Puy-de-D\u00f4me, Auvergne-Rh\u00f4ne-Alpes (Auvergne)",
+                "y": 6520415.9,
+                "citycode": "63113",
+                "postcode": "63100",
+                "score": 0.8507454545454545,
+                "street": "Rue Jules Verne",
+                "city": "Clermont-Ferrand",
+                "type": "housenumber",
+                "x": 710060,
+                "housenumber": "27",
+                "importance": 0.3582,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000324744542",
+                "label": "27 Rue Jules Verne 63100 Clermont-Ferrand"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -1.693424,
+                    48.098866
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "35, Ille-et-Vilaine, Bretagne",
+                "y": 6787990.5,
+                "citycode": "35238",
+                "postcode": "35000",
+                "score": 0.849990909090909,
+                "street": "Rue Jules Verne",
+                "city": "Rennes",
+                "type": "housenumber",
+                "x": 350825.1,
+                "housenumber": "27",
+                "importance": 0.3499,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000002009885463",
+                "label": "27 Rue Jules Verne 35000 Rennes"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    4.713402,
+                    49.777524
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "08, Ardennes, Grand-Est (Champagne-Ardenne)",
+                "y": 6965629.3,
+                "citycode": "08105",
+                "postcode": "08000",
+                "score": 0.8455363636363635,
+                "street": "Rue Jules Verne",
+                "city": "Charleville-M\u00e9zi\u00e8res",
+                "type": "housenumber",
+                "x": 823486,
+                "housenumber": "27",
+                "importance": 0.3009,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000273461780",
+                "label": "27 Rue Jules Verne 08000 Charleville-M\u00e9zi\u00e8res"
+            }
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    4.37968,
+                    43.846185
+                ],
+                "type": "Point"
+            },
+            "type": "Feature",
+            "properties": {
+                "context": "30, Gard, Occitanie (Languedoc-Roussillon)",
+                "y": 6306211,
+                "citycode": "30189",
+                "postcode": "30000",
+                "score": 0.8450727272727273,
+                "street": "Rue Jules Verne",
+                "city": "N\u00eemes",
+                "type": "housenumber",
+                "x": 810951.9,
+                "housenumber": "27",
+                "importance": 0.2958,
+                "name": "27 Rue Jules Verne",
+                "id": "ADRNIVX_0000000259667640",
+                "label": "27 Rue Jules Verne 30000 N\u00eemes"
+            }
+        }
+    ],
+    "version": "draft",
+    "attribution": "BAN",
+    "type": "FeatureCollection",
+    "query": "27 rue jules verne"
+}

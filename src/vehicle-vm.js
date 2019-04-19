@@ -1,23 +1,28 @@
 import { inject, NewInstance } from 'aurelia-dependency-injection';
 import { ValidationController, validateTrigger } from 'aurelia-validation';
-import { Car, Vehicle, Person } from "./vehicle";
-import { computedFrom } from 'aurelia-framework';
+import { Person } from "./vehicle";
+import { Service } from './service';
 
 
-@inject(NewInstance.of(ValidationController))
+
+
+
+
+@inject(NewInstance.of(ValidationController), Service)
 export class VehicleVm {
-  constructor(controller) {
+  constructor(controller, service) {
     this.controller = controller;
     this.controller.validateTrigger = validateTrigger.changeOrBlur;
-
     // this.car = new Car();
     // this.vehicle = new Vehicle();
     this.person = new Person();
-    console.log(this.person);
+    this.label = (item) => item && item.label;
+    this.resource = (str) => service.getAdresse(str);
+    this.acresult;
   }
 
   valider() {
-    console.log(this.controller.errors);
+    console.log(this.acresult);
     this.controller.validate()
       .then(result => {
         if (result.valid) {

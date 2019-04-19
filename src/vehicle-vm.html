@@ -1,7 +1,7 @@
 <template>
-    <require from="./invalid-feedback.html"></require>
- 
-    <button class="btn btn-primary" type="submit" click.delegate="valider()">Submit form</button>
+  <require from="./invalid-feedback.html"></require>
+  <button class="btn btn-primary" type="submit" click.delegate="valider()">Submit form</button>
+  <auto-complete resource.bind="resource" label.bind='label' result.bind="acresult"></auto-complete>
 
   <div class="col-md-3 mb-3" validation-errors.bind="nameErrors">
     <label for="validationCustom05">Name</label>
